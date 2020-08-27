@@ -4,13 +4,13 @@ Proto for a package to send plotting commands from an R client to a Unity3D serv
 Commands include vrplot, vrclear, vrtitle.
 
 An example:
-'''
+```
   x <- seq(-1, 1, length.out = 100)
   y <- seq(-1, 1, length.out = 100)
   z <- sin(x)
   colInd = rep(1:10, length.out = 100)
   vrplot("Plot1", x, y, z, colInd, type="cube")
   vrlabels("Plot1", "X stuff", "Y stuff", "Z stuff")
-'''
+```
 
  
